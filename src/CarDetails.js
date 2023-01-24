@@ -4,12 +4,11 @@ import ReactDOM from 'react-dom/client';
 
 var config = {
     method: 'post',
-    url:'https://driver-vehicle-licensing.api.gov.uk/vehicle-enquiry/v1/vehicles',
+    url:'https://d1kz03n03qfa86.cloudfront.net/vehicle-enquiry/v1/vehicles',
     headers: {
-      'x-api-key': 'TUfXa8r4YZ3kgZBAFxLbE5EYPp6ct2VN1yh9B8Pj',
-      'Content-Type': 'application/json',
+      'x-api-key': 'TUfXa8r4YZ3kgZBAFxLbE5EYPp6ct2VN1yh9B8Pj'
     },
-    data: {registrationNumber: 'AA19AAA'}
+    data: {'registrationNumber': 'HY06ZVX' }
   };
 
 
@@ -27,8 +26,7 @@ export default function CarDetails() {
   
     return (
       <div>
-        <h1>{post.title}</h1>
-        <p>{post.body}</p>
+        <p>{post}</p>
       </div>
     );
   }
